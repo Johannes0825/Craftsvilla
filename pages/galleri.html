@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="../style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Bentham&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+         rel="stylesheet"
+      />
+      <script src="../main.js" defer></script>
+   </head>
+   <body>
+      <header class="header">
+         <a href="../index.html">
+            <img src="../img/Logo mørk.png" alt="" class="logo" />
+         </a>
+         <ul>
+            <a href="">
+               <li>Galleri</li>
+            </a>
+            <a href="./booking.html">
+               <li>Booking</li>
+            </a>
+            <a href="#" id="feedback-link">
+               <li>Feedback</li>
+            </a>
+         </ul>
+         <button class="primary-btn">Book nå</button>
+      </header>
+
+      <main>
+         <section id="galleri-section">
+            <div class="head-container">
+               <h2>Galleri</h2>
+               <div class="line"></div>
+            </div>
+            <figure>
+               <img id="galleri-img" src="../img/galleri1.jpg" alt="" />
+            </figure>
+            <div id="galleri-btns">
+               <button class="dark-btn" id="prev-btn">Forrige</button>
+               <button class="dark-btn" id="next-btn">Neste</button>
+            </div>
+         </section>
+      </main>
+
+      <footer><h4>© Craftsvilla Inc ©</h4></footer>
+      <div id="modal-overlay"></div>
+      <div id="feedback-modal">
+         <form>
+            <h3 class="form-header">Send feedback</h3>
+            <label for="name"><img src="../icons/Person.png" alt="" /></label>
+            <input type="text" placeholder="Navn" />
+            <label for="phone">
+               <img src="../icons/Phone.png" alt="" />
+            </label>
+            <input type="number" placeholder="Telefon" />
+            <label for="course"><img src="../icons/Select.png" alt="" /></label>
+            <select name="course" id="course">
+               <option value="velg et kurs">Velg et kurs</option>
+               <option value="Mosaikk">Mosaikk</option>
+               <option value="Akvarell">Akvarell</option>
+               <option value="Lerretsmaling">Lerretsmaling</option>
+            </select>
+            <label for="feedback"
+               ><img src="../icons/Message.png" alt=""
+            /></label>
+            <input type="text" placeholder="Skriv din tilbakemelding her..." />
+            <button id="send-btn">Send</button>
+         </form>
+      </div>
+   </body>
+</html>
